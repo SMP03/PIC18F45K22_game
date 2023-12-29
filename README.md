@@ -7,6 +7,8 @@
 > - Guillermo Medina [Raiward9](https://github.com/Raiward9/)
 
 ## Funcionament del joc
+Per executar una simulació del joc i compilar els binaris pel microcontrolador cal disposar de *Proteus*. El projecte està dins del fitxer `game.pdsprj`.
+
 Primer de tot es mostren els crèdits inicials i l’splash inicial. Després es pot seleccionar la dificultat (velocitat del joc) amb els botons E (augmentar dificultat), F (disminuir dificultat) i K (seleccionar dificultat). Un cop dins del joc a dalt a la dreta es mostra el tipus de controlador. Amb el botó K es pot anar canviant entre Keypad, Joystick i Keyboard. L’objectiu del joc és aconseguir les monedes (50pts) i les gemes (100pts) necessàries per aconseguir 500 punts abans que s’acabi el temps (60s) o les col·lisions amb els obstacles matin al jugador (3 vides).
 
 ## Estructura del codi
@@ -40,4 +42,4 @@ El codi segueix una estructura modular, on cada perifèric o grup de funcions es
 > **Solució**: optimitzar les crides a la GLCD i sempre treballar en termes de bytes i fer servir operacions de bits per obtenir el resultat desitjat.
 
 **Problema**: la lògica de control del joc involucra controlar molts objectes alhora.
-- **Solució**: Gestionar la informació de cada sprite en un struct i fer estructures de dades escalables sobre aquests structs.
+> **Solució**: Gestionar la informació de cada sprite en un struct i fer estructures de dades escalables sobre aquests structs.
